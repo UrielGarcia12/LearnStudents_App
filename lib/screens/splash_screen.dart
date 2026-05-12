@@ -1,4 +1,5 @@
 // screens/splash_screen.dart
+import 'onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import '../ui/colors.dart';
 import '../ui/responsive.dart';
@@ -104,7 +105,7 @@ class _SplashScreenState extends State<SplashScreen>
       PageRouteBuilder(
         transitionDuration: const Duration(milliseconds: 1000),
         reverseTransitionDuration: const Duration(milliseconds: 400),
-        pageBuilder: (_, __, ___) => const LoginScreen(),
+        pageBuilder: (_, __, ___) => const OnboardingScreen(),
         transitionsBuilder: (context, animation, _, child) {
           // Curva muy suave tipo "ease in out quint"
           final curved = CurvedAnimation(
